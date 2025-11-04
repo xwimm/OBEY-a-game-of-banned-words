@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+  background: #111; /* canvas draws over this anyway */
+  color: #fff;
+}
+
+/*  top-left script  */
+#controls {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* button style */
+button {
+  font: "Times New Roman";
+  padding: 4px 8px;
+  border: 1px solid #aaa;
+  background: #eee;
+  color: #111;
+  cursor: pointer;
+}
+
+button {
+  font: inherit;
+  padding: 6px 14px;
+  background: #C8102E; /*  MAGA red */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #a50c25;
+}
+
+/* inline status text */
+#status {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+#instructions {
+  display: none;
+}
